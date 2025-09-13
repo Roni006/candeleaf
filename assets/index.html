@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--TODO: GOGGLE FONTS LINK  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Candeleaf</title>
+</head>
+
+<body>
+
+    <!--TODO: SECTION START -->
+    <header class="flex shadow-md py-4 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-50">
+        <div class="container max-w-[1135px] mx-auto ">
+            <div class="flex flex-wrap items-center justify-between gap-5 w-full ">
+                <a href="index.html" class="max-sm:hidden"><img src="./img/logo.png" alt="logo" class="w-36" /></a>
+                <a href="index.html" class="hidden max-sm:block"><img src="./img/icon.png" alt="logo"
+                        class="w-12" /></a>
+
+                <div id="collapseMenu"
+                    class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
+                    <button id="toggleClose"
+                        class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border border-gray-200 cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                            viewBox="0 0 320.591 320.591">
+                            <path
+                                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                                data-original="#000000"></path>
+                            <path
+                                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+
+                    <ul
+                        class="lg:flex gap-x-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+                        <li class="mb-6 hidden max-lg:block">
+                            <a href="javascript:void(0)"><img src="./img/logo.png" alt="logo" class="w-36" />
+                            </a>
+                        </li>
+                        <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3 flex items-center ">
+                            <a href='javascript:void(0)'
+                                class=" hover:text-[#56B280] text-black block font-medium text-[15px]">Discovery
+                                <!-- <span> -->
+                                <!-- <img src="./img/Vector.svg" alt="icon"> -->
+                                <!-- </span> -->
+                            </a>
+                        </li>
+                        <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='javascript:void(0)'
+                                class="hover:text-[#56B280] text-black block font-medium text-[15px]">About</a>
+                        </li>
+                        <li class="max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3"><a href='javascript:void(0)'
+                                class="hover:text-[#56B280] text-black block font-medium text-[15px]">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex max-lg:ml-auto space-x-4">
+                    <div class="der cursor-pointer" title="user">
+                        <img src="./img/user.svg" alt="">
+                    </div>
+                    <div class="cart cursor-pointer" title="cart">
+                        <img src="./img/cart.svg" alt="">
+                    </div>
+
+                    <button id="toggleOpen" class="lg:hidden cursor-pointer">
+                        <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    </header>
+    <!--TODO: SECTION END -->
+
+
+    <!--TODO:MAIN SECTION START -->
+
+    <!--? PRODUCT SECTION START -->
+    <section class="product-section pt-[90px] pb-[125px]">
+        <div class="container max-w-[1135px] mx-auto">
+            <div class="product-top text-center">
+                <h1 class="text-[#0B254B] font-medium text-[40px]">Products</h1>
+                <p class="text-[18px] text-[#5E6E89] font-medium pt-[10px] pb-[60px]">Order it for you or your beloved
+                    ones</p>
+            </div>
+
+            <div class="product-content flex flex-wrap gap-[30px] items-center justify-center">
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-2.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Spiced Mint</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-1.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Sweet Straweberry</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-3.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Cool Blueberries</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-4.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Juicy Lemon</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-5.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Product name</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-6.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Fragrant Cinnamon</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-7.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Summer Cherries</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+                
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-8.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Clean Lavander</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--? PRODUCT SECTION START -->
+
+    <!--? POPULAR SECTION START -->
+    <section class="product-section pt-[90px] pb-[125px]">
+        <div class="container max-w-[1135px] mx-auto">
+            <div class="product-top text-center">
+                <h1 class="text-[#0B254B] font-medium text-[40px]">Popular</h1>
+                <p class="text-[18px] text-[#5E6E89] font-medium pt-[10px] pb-[50px]">Our top selling product that you may like</p>
+            </div>
+
+            <div class="product-content flex flex-wrap gap-[30px] items-center justify-center">
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-2.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Spiced Mint</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-1.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Sweet Straweberry</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-3.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Cool Blueberries</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+
+                <div class="produc-blocks shadow-lg hover:shadow-2xl duration-200 cursor-pointer w-[255px]">
+                    <div class="product-img  bg-[#f7f8fa] rounded-lg">
+                        <img src="./img/products-img/product-4.png" alt="product image">
+                    </div>
+                    <div class="product-details px-[25px] pt-[10px] pb-[15px]">
+                        <h2 class="text-[18px] font-medium text-[#1D293F]">Juicy Lemon</h2>
+                        <p class="text-end text-[#56B280] font-medium text-[20px]">9.99$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--? POPULAR SECTION START -->
+
+
+    <!--? MAIN SECTION START -->
+    <!--? MAIN SECTION START -->
+
+    <!--TODO:MAIN SECTION END -->
+</body>
+
+</html>

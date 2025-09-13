@@ -1,0 +1,13 @@
+@font-face{
+    font-family: global;
+    src: url("../assets/font/Poppins-Regular.ttf");
+    src: url("../assets/font/Poppins-Medium.ttf");
+    src: url("../assets/font/Poppins-Bold.ttf");
+
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-global: global, "sans-serif"
+}
