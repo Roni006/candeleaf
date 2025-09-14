@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: global;
     src: url("../assets/font/Poppins-Regular.ttf");
     src: url("../assets/font/Poppins-Medium.ttf");
@@ -8,6 +8,14 @@
 
 @import "tailwindcss";
 
-@theme{
+@theme {
     --font-global: global, "sans-serif"
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url("./font/Poppins-Regular.ttf"),
+        url("./font/Poppins-Medium.ttf"),
+        url("./font/Poppins-Bold.ttf"); 
+    font-style: normal;
 }
